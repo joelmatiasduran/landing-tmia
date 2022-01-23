@@ -11,6 +11,7 @@ const Footer: React.FC = () => {
           <h2>Features</h2>
           <h2>Pricing</h2>
           <h2>Contact</h2>
+          <h2>Tailwind is still isn't working</h2>
         </div>
       </footer>
     </>

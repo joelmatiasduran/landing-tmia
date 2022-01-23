@@ -1,6 +1,6 @@
-// import App from "next/app";
+import App from "next/app";
 import "tailwindcss/tailwind.css";
-import "../styles/base.css";
+import "../styles/global.css";
 
 import type { AppProps /*, AppContext */ } from "next/app";
 
