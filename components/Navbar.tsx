@@ -8,8 +8,8 @@ import React from "react";
 const Navbar: React.FC = () => {
   return (
     <>
-      <p>Terapia MIA</p>{" "}
       <nav>
+        <p>Terapia Mia</p>{" "}
         <Link href="/">
           <a>Home</a>
         </Link>{" "}
@@ -18,10 +18,6 @@ const Navbar: React.FC = () => {
           <a>About</a>
         </Link>{" "}
         |{" "}
-        <Link href="/users">
-          <a>Users List</a>
-        </Link>{" "}
-        | <a href="/api/users">Users API</a>
       </nav>
     </>
   );
