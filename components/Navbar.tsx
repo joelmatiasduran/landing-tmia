@@ -36,32 +36,31 @@ const Navbar: React.FC = () => {
           </button>
         </div>
         <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-          <div className="text-sm lg:flex-grow">
-            <a
-              href="#responsive-header"
-              className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-white mr-4"
-            >
-              Docs
-            </a>
-            <a
-              href="#responsive-header"
-              className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-white mr-4"
-            >
-              Examples
-            </a>
-            <a
-              href="#responsive-header"
-              className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-white"
-            >
-              Blog
-            </a>
-          </div>
+          <div className="text-sm lg:flex-grow"></div>
           <div>
             <a
-              href="#"
-              className="inline-block text-sm px-4 py-2 leading-none border rounded text-black border-black hover:border-red-400 hover:text-red-400 hover:bg-white mt-4 lg:mt-0 duration-300"
+              href="#responsive-header"
+              className="block px-4 mt-4 lg:inline-block lg:mt-0 text-black mr-4 text-lg hover:text-red-400"
             >
-              Login
+              FEATURES
+            </a>
+            <a
+              href="#responsive-header"
+              className="block px-4 mt-4 lg:inline-block lg:mt-0 text-black mr-4 text-lg hover:text-red-400"
+            >
+              PRICING
+            </a>
+            <a
+              href="#responsive-header"
+              className="block px-4 mt-4 lg:inline-block lg:mt-0 text-black text-lg hover:text-red-400"
+            >
+              CONTACT
+            </a>
+            <a
+              href="#"
+              className="inline-block mx-6 px-8 py-4 leading-none border rounded text-black border-black text-lg hover:border-red-400 hover:text-red-400 hover:bg-white mt-4 lg:mt-0 duration-300"
+            >
+              LOGIN
             </a>
           </div>
         </div>

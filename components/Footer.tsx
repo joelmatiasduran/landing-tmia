@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
         <footer className="text-white body-font bg-indigo-700">
           <div className="container px-5 py-14 mx-auto flex md:items-center lg:items-center md:flex-col md:flex-nowrap flex-wrap flex-col">
             <h3 className="py-6">35.000 + ALREADY JOINED</h3>
-            <h3 className="text-3xl">Stay up-to-date with what we're doing</h3>
+            <h3 className="text-3xl">Stay up-to-date with what we are doing</h3>
             <div className="flex flex-row items-center justify-center pt-4">
               <input className="py-2 px-4 rounded-md text-black" />
               <button className="ml-4 px-6 py-2 text-black hover:text-red-400 bg-white border-2 border-transparent hover:border-red-400 rounded-lg duration-300">
@@ -33,9 +33,9 @@ const Footer: React.FC = () => {
                 <a className="text-2xl text-gray-200">
                   <svg
                     fill="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     className="w-5 h-5"
                     viewBox="0 0 24 24"
                   >
@@ -45,9 +45,9 @@ const Footer: React.FC = () => {
                 <a className="ml-3 text-2xl text-gray-200">
                   <svg
                     fill="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     className="w-5 h-5"
                     viewBox="0 0 24 24"
                   >
