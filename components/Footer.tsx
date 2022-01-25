@@ -1,4 +1,5 @@
-import React from "react";
+import Image from "next/image";
+import Logo from "../public/images/logo-bookmark.svg";
 
 // interface FooterProps {}
 
@@ -7,16 +8,6 @@ const Footer: React.FC = () => {
     <>
       <div className="">
         <footer className="text-white body-font bg-indigo-700">
-          <div className="container px-5 py-14 mx-auto flex md:items-center lg:items-center md:flex-col md:flex-nowrap flex-wrap flex-col">
-            <h3 className="py-6">35.000 + ALREADY JOINED</h3>
-            <h3 className="text-3xl">Stay up-to-date with what we are doing</h3>
-            <div className="flex flex-row items-center justify-center pt-4">
-              <input className="py-2 px-4 rounded-md text-black" />
-              <button className="ml-4 px-6 py-2 text-black hover:text-red-400 bg-white border-2 border-transparent hover:border-red-400 rounded-lg duration-300">
-                Contact Us
-              </button>
-            </div>
-          </div>
           <div className="bg-indigo-900">
             <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
               <p className="text-white text-sm text-center sm:text-left">
@@ -26,7 +17,7 @@ const Footer: React.FC = () => {
                   className="text-2xl text-white ml-1"
                   target="_blank"
                 >
-                  © TERAPIAMIA
+                  <Image src={Logo} alt="Navbar Logo" />
                 </a>
               </p>
               <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">

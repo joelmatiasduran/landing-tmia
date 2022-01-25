@@ -8,7 +8,7 @@ import Logo from "../public/images/logo-bookmark.svg";
 const Navbar: React.FC = () => {
   return (
     <>
-      <nav className="flex items-center justify-between flex-wrap p-6 px-40 fixed w-full">
+      <nav className="flex items-center justify-between flex-wrap p-6 px-40 fixed w-full bg-white z-10">
         <div className="flex items-center flex-shrink-0 text-black mr-6">
           <Image src={Logo} alt="Navbar Logo" />
         </div>
