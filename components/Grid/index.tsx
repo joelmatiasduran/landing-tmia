@@ -9,7 +9,7 @@ interface indexProps {}
 const Grid: React.FC<indexProps> = ({}) => {
   return (
     <>
-      <div className="mt-48 flex flex-col justify-center items-center shadow-2xl">
+      <div className="mt-48 flex flex-col justify-center items-center">
         <div className="">
           <h2 className="text-3xl font-bold text-center">
             Download the extension
