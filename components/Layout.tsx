@@ -19,7 +19,7 @@ const Layout = ({ children, title = "Terapia Mia" }: Props) => (
     <header>
       <Navbar />
     </header>
-    {children}
+    <main className="pt-24">{children}</main>
     <Footer />
   </div>
 );

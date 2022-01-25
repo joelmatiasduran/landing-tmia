@@ -6,7 +6,7 @@ import Layout from "../components/Layout";
 
 const IndexPage = () => (
   <Layout title="Home | Terapia Mia">
-    <div className="">
+    <div className="h-full min-h-full">
       <Hero />
       <Features />
       <Grid />

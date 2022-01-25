@@ -5,7 +5,7 @@ import React from "react";
 const Footer: React.FC = () => {
   return (
     <>
-      <div className="mb-16">
+      <div className="">
         <footer className="text-white body-font bg-indigo-700">
           <div className="container px-5 py-14 mx-auto flex md:items-center lg:items-center md:flex-col md:flex-nowrap flex-wrap flex-col">
             <h3 className="py-6">35.000 + ALREADY JOINED</h3>
