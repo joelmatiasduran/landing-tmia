@@ -14,6 +14,9 @@ module.exports = {
         "grayish-blue": "hsl(229, 8%, 60%)",
         "very-dark-blue": "hsl(229, 31%, 21%)",
       },
+      fontFamily: {
+        Rubik: ['"Rubik"', "sans-serif"],
+      },
     },
   },
   variants: {
