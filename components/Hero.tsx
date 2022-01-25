@@ -16,7 +16,7 @@ const Hero: React.FC = ({}) => {
                 websites. Open a new browser tab and see your sites load
                 instantly.Try it for free.
               </p>
-              <div className="mt-12">
+              <div className="mt-12 ml-4">
                 <button className="border-4 text-white bg-blue-500 px-8 py-4 rounded-lg">
                   Get it on Chrome
                 </button>
@@ -37,7 +37,7 @@ const Hero: React.FC = ({}) => {
                 />
               </div>
               <div className="ml-12">
-                <div className="bg-soft-blue h-60 flex-grow rounded-l-b-full rounded-l-full "></div>
+                <div className="bg-soft-blue h-60 flex-grow rounded-l-b-full rounded-l-full"></div>
               </div>
             </div>
           </div>

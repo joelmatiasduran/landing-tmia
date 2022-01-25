@@ -8,7 +8,7 @@ const Faq: React.FC<indexProps> = ({}) => {
       <div className="flex flex-col items-center justify-center bg-white">
         <div className="flex flex-col items-center justify-center text center">
           <h2 className="text-4xl font-bold">Frequently Asked Questions</h2>
-          <h6 className="pt-8 text-xl">
+          <h6 className="pt-8 text-xl max-w-2xl text-center text-gray-500">
             Here are some of our FAQs. If you have any other questions you’d
             like answered please feel free to email us.
           </h6>

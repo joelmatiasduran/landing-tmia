@@ -14,7 +14,7 @@ const Grid: React.FC<indexProps> = ({}) => {
           <h2 className="text-3xl font-bold text-center">
             Download the extension
           </h2>
-          <h4 className="mt-4 text-xl">
+          <h4 className="mt-4 text-xl text-gray-500">
             We have got more browser in the pipeline. Please do let us know if
             you have got a favourite you would like us to prioritize.{" "}
           </h4>

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Logo from "../public/images/logo-bookmark.svg";
+import Logo from "../public/images/logo-bookmarktwo.svg";
 import TwitterIcon from "../public/images/icon-twitter.svg";
 import FacebookIcon from "../public/images/icon-facebook.svg";
 
