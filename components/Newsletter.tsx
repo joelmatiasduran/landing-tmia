@@ -13,7 +13,7 @@ const Newsletter: React.FC<NewsletterProps> = ({}) => {
           </h3>
           <div className="flex flex-row items-center justify-center pt-4">
             <input className="py-4 px-4 rounded-md text-black" />
-            <button className="ml-4 px-8 py-4 text-black hover:text-red-400 bg-white border-2 border-transparent hover:border-red-400 rounded-lg duration-300">
+            <button className="ml-4 px-8 py-4 text-white hover:text-red-400 bg-red-400 hover:bg-white border-2 border-transparent hover:border-red-400 rounded-lg duration-300">
               Contact Us
             </button>
           </div>
