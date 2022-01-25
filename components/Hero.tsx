@@ -9,19 +9,21 @@ const Hero: React.FC = ({}) => {
       <div className="flex flex-col items-center justify-center pt-14 w-full min-w-full">
         <div className="flex flex-row w-full min-w-full">
           <div className="w-1/2">
-            <h1 className="text-5xl font-bold">A Simple Bookmark Manager</h1>
-            <p className="text-xl mt-6">
-              A clean and simple interface to organize your favourite websites.
-              Open a new browser tab and see your sites load instantly.Try it
-              for free.
-            </p>
-            <div>
-              <button className="border-4 text-white bg-blue-500 px-8 py-4 rounded-lg">
-                Get it on Chrome
-              </button>
-              <button className="border-4 border-black px-8 py-4 rounded-lg">
-                Get it on Firefox
-              </button>
+            <div className="px-44 py-24">
+              <h1 className="text-5xl font-bold">A Simple Bookmark Manager</h1>
+              <p className="text-xl mt-6">
+                A clean and simple interface to organize your favourite
+                websites. Open a new browser tab and see your sites load
+                instantly.Try it for free.
+              </p>
+              <div className="mt-12">
+                <button className="border-4 text-white bg-blue-500 px-8 py-4 rounded-lg">
+                  Get it on Chrome
+                </button>
+                <button className="border-4 border-black px-8 py-4 rounded-lg">
+                  Get it on Firefox
+                </button>
+              </div>
             </div>
           </div>
           <div className="w-1/2">
