@@ -16,7 +16,7 @@ const Faq: React.FC<indexProps> = ({}) => {
         <div>
           <h2></h2>
         </div>
-        <div>
+        <div className="my-8">
           <a href="#">
             <button className="px-8 py-4 rounded-lg bg-blue-500 text-white hover:text-blue-500 border-4 border-transparent hover:bg-transparent hover:border-blue-500 duration-300 ">
               More Info

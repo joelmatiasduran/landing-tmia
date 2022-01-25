@@ -8,7 +8,7 @@ import Newsletter from "../components/Newsletter";
 
 const IndexPage = () => (
   <Layout title="Home | Terapia Mia">
-    <div className="h-full min-h-full ">
+    <div className="h-full min-h-full w-full">
       <Hero />
       <Features />
       <Grid />

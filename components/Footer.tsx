@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
   return (
     <>
       <div className="">
-        <footer className="text-white body-font bg-indigo-700">
+        <footer className="text-white body-font bg-soft-blue">
           <div className="bg-indigo-900">
             <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
               <p className="text-white text-sm text-center sm:text-left">
@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
                 </a>
               </p>
               <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-                <a className="text-2xl text-gray-200 cursor-pointer">
+                <a className="fill-current text-2xl text-red-400 cursor-pointer">
                   <Image
                     src={FacebookIcon}
                     alt="Navbar Logo"
