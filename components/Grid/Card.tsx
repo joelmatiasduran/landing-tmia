@@ -14,8 +14,8 @@ const Card: React.FC<CardProps> = ({
 }) => {
   return (
     <>
-      <div className="my-24 mx-4 rounded-lg shadow-2xl bg-gray-100">
-        <div className="px-4 py-8 text-center">
+      <div className="my-24 mx-4 rounded-lg bg-white">
+        <div className="px-4 py-8 text-center  shadow-2xl ">
           <div className="mx-12">
             <div className="mb-6 z-0">
               <Image
