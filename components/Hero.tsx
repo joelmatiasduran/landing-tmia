@@ -7,7 +7,7 @@ import React from "react";
 const Hero: React.FC = ({}) => {
   return (
     <>
-      <div className="flex items-center justify-center">
+      <div className="flex flex-col items-center justify-center">
         <div className="flex flex-row w-full">
           <div className="w-1/2">
             <h1 className="text-4xl font-bold">A Simple Bookmark Manager</h1>
