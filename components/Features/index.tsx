@@ -24,32 +24,32 @@ const Features: React.FC<indexProps> = ({}) => {
         <div className="mt-16 flex flex-col text-lg md:text-2xl justify-between border-b-2 border-b-gray-300 pt-5 max-w-sm  md:max-w-full">
           <div className="flex flex-row w-full min-w-full">
             <h4
-              className="px-6 cursor-pointer"
+              className="px-8 cursor-pointer"
               onClick={() => setIsTab("first")}
             >
               Simple Bookmarking
             </h4>
             <h4
-              className="px-6 cursor-pointer"
+              className="px-8 cursor-pointer"
               onClick={() => setIsTab("second")}
             >
               Speedy Searching
             </h4>
             <h4
-              className="px-6 cursor-pointer"
+              className="px-8 cursor-pointer"
               onClick={() => setIsTab("third")}
             >
               Easy Sharing
             </h4>
           </div>
           <div
-            className={`transform duration-300 border-b-8 border-b-soft-red w-64 translate ${
+            className={`mt-8 transform ease-in-out duration-300 border-b-8 border-b-soft-red w-72 translate ${
               isTab === "first"
                 ? "translate-x-0"
                 : isTab === "second"
-                ? "translate-x-64"
+                ? "translate-x-64 ml-4"
                 : isTab === "third"
-                ? "translate-x-{100} will-change-scroll"
+                ? "translate-x-96 ml-32 will-change-scroll"
                 : ""
             }`}
           ></div>
