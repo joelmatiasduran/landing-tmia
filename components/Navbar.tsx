@@ -8,9 +8,9 @@ import Logo from "../public/images/logo-bookmark.svg";
 const Navbar: React.FC = () => {
   return (
     <>
-      <nav className="flex items-center justify-between flex-wrap p-6 px-40 fixed w-full bg-white z-10">
+      <nav className="flex items-center justify-between flex-wrap p-8 px-40 fixed w-full bg-white z-10">
         <div className="flex items-center flex-shrink-0 text-black mr-6">
-          <Image src={Logo} alt="Navbar Logo" />
+          <Image src={Logo} alt="Navbar Logo" width="200" height="35" />
         </div>
         <div className="block lg:hidden">
           <button className="flex items-center px-3 py-2 border rounded text-black border-teal-400 hover:text-white hover:border-white">
@@ -47,7 +47,7 @@ const Navbar: React.FC = () => {
             </a>
             <a
               href="#"
-              className="inline-block mx-6 px-10 py-4 leading-none border rounded-lg text-white bg-red-400 border-transparent text-lg hover:border-red-400 hover:text-red-400 hover:bg-white mt-4 lg:mt-0 duration-300"
+              className="inline-block mx-6 px-10 py-4 leading-none border rounded-lg text-white bg-red-400 border-transparent text-lg hover:border-red-400 hover:text-red-400 hover:bg-white mt-4 lg:mt-0 duration-300 font-semibold"
             >
               LOGIN
             </a>

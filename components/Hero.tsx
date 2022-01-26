@@ -8,8 +8,8 @@ const Hero: React.FC = ({}) => {
     <>
       <div className="flex flex-col items-center justify-center pt-14 w-full min-w-full">
         <div className="flex flex-col md:flex-row w-full min-w-full">
-          <div className="w-full md:w-1/2">
-            <div className="md:px-44 py-24">
+          <div className="w-full md:w-3/6">
+            <div className="md:pl-44 pr-38 py-24">
               <h1 className="text-5xl font-bold font-Rubik">
                 A Simple Bookmark Manager
               </h1>
@@ -28,7 +28,7 @@ const Hero: React.FC = ({}) => {
               </div>
             </div>
           </div>
-          <div className="w-full md:w-1/2">
+          <div className="w-full md:w-3/6">
             <div className="w-full relative flex flex-col-reverse mt-64">
               <div className="absolute">
                 <Image

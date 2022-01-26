@@ -12,8 +12,8 @@ const Newsletter: React.FC<NewsletterProps> = ({}) => {
             Stay up-to-date with what we are doing
           </h3>
           <div className="flex flex-col md:flex-row items-center justify-center w-full pt-8 pb-4">
-            <input className="w-full py-4 px-8 md:px-4 rounded-md text-black" />
-            <button className="w-full ml-4 px-8 py-4 text-white hover:text-red-400 bg-red-400 hover:bg-white border-2 border-transparent hover:border-red-400 rounded-lg duration-300">
+            <input className="w-full md:w-auto py-4 px-8 md:px-4 rounded-md text-black" />
+            <button className="w-full md:w-auto ml-4 px-8 py-4 text-white hover:text-red-400 bg-red-400 hover:bg-white border-2 border-transparent hover:border-red-400 rounded-lg duration-300">
               Contact Us
             </button>
           </div>
