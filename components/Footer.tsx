@@ -9,27 +9,38 @@ const Footer: React.FC = () => {
   return (
     <>
       <div className="">
-        <footer className="text-white body-font bg-soft-blue">
+        <footer className="text-white body-font bg-very-dark-blue">
           <div className="bg-indigo-900 py-6">
             <div className="container mx-auto px-5 flex flex-wrap flex-col sm:flex-row">
-              <p className="text-white text-sm text-center sm:text-left">
+              <p className="flex flex-row justify-center items-center text-white text-sm text-center sm:text-left">
                 <a
                   href="#"
                   rel="noopener noreferrer"
-                  className="p-4 text-2xl text-white ml-1 fill-white"
+                  className=" text-2xl text-white ml-1 fill-white"
                   target="_blank"
                 >
                   <Image
                     src={Logo}
                     alt="Navbar Logo"
-                    className="fill-white"
+                    className="text-black"
                     width="200"
                     height="35"
                   />
                 </a>
+                <div className="p-4 text-xl items-center justify-center">
+                  <a className="px-6 cursor-pointer hover:text-soft-red duration-300">
+                    FEATURES
+                  </a>
+                  <a className="px-6 cursor-pointer hover:text-soft-red duration-300">
+                    PRICING
+                  </a>
+                  <a className="px-6 cursor-pointer hover:text-soft-red duration-300">
+                    CONTACT
+                  </a>
+                </div>
               </p>
               <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-                <a className="fill-current text-2xl text-red-400 cursor-pointer">
+                <a className="p-4 fill-current text-2xl text-red-400 cursor-pointer">
                   <Image
                     src={FacebookIcon}
                     alt="Navbar Logo"
@@ -37,7 +48,7 @@ const Footer: React.FC = () => {
                     width="30"
                   />
                 </a>
-                <a className="ml-8 text-2xl text-gray-200 cursor-pointer">
+                <a className="p-4 ml-8 text-2xl text-gray-200 cursor-pointer">
                   <Image
                     src={TwitterIcon}
                     alt="Navbar Logo"
