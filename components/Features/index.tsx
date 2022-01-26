@@ -1,4 +1,8 @@
 import { useState } from "react";
+import Image from "next/image";
+import FirstImg from "../../public/images/illustration-features-tab-1.svg";
+import SecongImg from "../../public/images/illustration-features-tab-2.svg";
+import ThirdImg from "../../public/images/illustration-features-tab-3.svg";
 
 interface indexProps {}
 
@@ -20,6 +24,9 @@ const Features: React.FC<indexProps> = ({}) => {
           <h4 className="px-6">Simple Bookmarking</h4>
           <h4 className="px-6">Speedy Searching</h4>
           <h4 className="px-6">Easy Sharing</h4>
+        </div>
+        <div>
+          <Image src={FirstImg} alt={""} />
         </div>
       </div>
     </>

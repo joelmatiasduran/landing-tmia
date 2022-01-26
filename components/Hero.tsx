@@ -9,11 +9,11 @@ const Hero: React.FC = ({}) => {
       <div className="flex flex-col items-center justify-center mt-24 pt-14 w-full min-w-full ">
         <div className="flex flex-col md:flex-row w-full min-w-full">
           <div className="w-full md:w-3/6">
-            <div className="md:pl-44 pr-38 py-24 max-w-2xl">
-              <h1 className="text-5xl text-very-dark-blue font-bold font-Rubik">
+            <div className="md:pl-44 pr-38 py-24">
+              <h1 className="text-6xl text-very-dark-blue font-bold font-Rubik max-w-3xl">
                 A Simple Bookmark Manager
               </h1>
-              <p className="text-xl mt-8">
+              <p className="text-2xl mt-8 max-w-4xl text-gray-400">
                 A clean and simple interface to organize your favourite
                 websites. Open a new browser tab and see your sites load
                 instantly.Try it for free.
