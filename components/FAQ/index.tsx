@@ -46,7 +46,7 @@ const Faq: React.FC<indexProps> = ({}) => {
             </div>
             <h5
               className={
-                isOpen === "none"
+                isOpen !== "none"
                   ? "mt-10 text-xl text-gray-400 duration-300"
                   : "delay-300 h-0 hidden duration-300"
               }

@@ -77,30 +77,25 @@ const Features: React.FC<indexProps> = ({}) => {
               <div className="bg-soft-blue rounded-r-full h-56 md:h-96 w-96 mt-24"></div>
             </div>
             <div className="mt-12 md:mt-auto w-full md:w-1/2  max-w-xl">
-              {isTab === "first" ? (
+              {isTab === "first" && (
                 <FeatureInfo
                   FeatureTitle="Bookmark in one click"
                   FeatureContent="Organize your bookmarks however you like. Our simple
                     drag-and-drop interface gives you complete control over how
                     you manage your favourite sites."
                 />
-              ) : isTab === "second" ? (
+              )}
+              {isTab === "second" && (
                 <FeatureInfo
                   FeatureTitle="Intelligent search"
                   FeatureContent="Organize your bookmarks however you like. Our simple
                     drag-and-drop interface gives you complete control over how
                     you manage your favourite sites."
                 />
-              ) : isTab === "third" ? (
+              )}
+              {isTab === "third" && (
                 <FeatureInfo
                   FeatureTitle="Share your bookmarks"
-                  FeatureContent="Organize your bookmarks however you like. Our simple
-                    drag-and-drop interface gives you complete control over how
-                    you manage your favourite sites."
-                />
-              ) : (
-                <FeatureInfo
-                  FeatureTitle="Bookmark in one Click"
                   FeatureContent="Organize your bookmarks however you like. Our simple
                     drag-and-drop interface gives you complete control over how
                     you manage your favourite sites."
