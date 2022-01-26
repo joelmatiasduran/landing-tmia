@@ -34,12 +34,12 @@ const Hero: React.FC = ({}) => {
                 <Image
                   src={HeroImage}
                   alt="Bookmark Image"
-                  width="700"
-                  height="500"
+                  width="800"
+                  height="600"
                 />
               </div>
-              <div className="ml-44">
-                <div className="bg-soft-blue h-96 flex-grow rounded-l-b-full rounded-l-full"></div>
+              <div className="ml-52 flex flex-row-reverse">
+                <div className="bg-soft-blue h-96 w-24 flex-grow rounded-l-b-full rounded-l-full"></div>
               </div>
             </div>
           </div>
