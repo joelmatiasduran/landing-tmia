@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
         <footer className="text-white body-font bg-very-dark-blue">
           <div className="bg-indigo-900 py-6">
             <div className="container mx-auto px-5 flex flex-wrap flex-col sm:flex-row">
-              <p className="flex flex-row justify-center items-center text-white text-sm text-center sm:text-left">
+              <p className="flex flex-col md:flex-row justify-center items-center text-white text-sm text-center sm:text-left">
                 <a
                   href="#"
                   rel="noopener noreferrer"
@@ -27,14 +27,14 @@ const Footer: React.FC = () => {
                     height="35"
                   />
                 </a>
-                <div className="p-4 text-xl items-center justify-center">
-                  <a className="px-6 cursor-pointer hover:text-soft-red duration-300">
+                <div className="flex flex-col md:flex-row p-4 text-xl items-center justify-center">
+                  <a className="py-6 md:py-auto px-6 cursor-pointer hover:text-soft-red duration-300">
                     FEATURES
                   </a>
-                  <a className="px-6 cursor-pointer hover:text-soft-red duration-300">
+                  <a className="py-6 md:py-auto px-6 cursor-pointer hover:text-soft-red duration-300">
                     PRICING
                   </a>
-                  <a className="px-6 cursor-pointer hover:text-soft-red duration-300">
+                  <a className="py-6 md:py-auto px-6 cursor-pointer hover:text-soft-red duration-300">
                     CONTACT
                   </a>
                 </div>

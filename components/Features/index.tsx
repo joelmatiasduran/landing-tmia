@@ -21,7 +21,7 @@ const Features: React.FC<indexProps> = ({}) => {
             can access them on the go
           </h4>
         </div>
-        <div className="mt-16 flex flex-row text-lg md:text-2xl justify-between border-2 border-b-black py-5 max-w-sm  md:max-w-full">
+        <div className="mt-16 flex flex-row text-lg md:text-2xl justify-between border-b-2 border-b-black py-5 max-w-sm  md:max-w-full">
           <h4 className="px-6" onClick={() => setIsTab("first")}>
             Simple Bookmarking
           </h4>
