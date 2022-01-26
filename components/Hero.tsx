@@ -6,7 +6,7 @@ import HeroImage from "../public/images/illustration-hero.svg";
 const Hero: React.FC = ({}) => {
   return (
     <>
-      <div className="flex flex-col items-center justify-center pt-14 w-full min-w-full">
+      <div className="flex flex-col items-center justify-center mt-24 pt-14 w-full min-w-full">
         <div className="flex flex-col md:flex-row w-full min-w-full">
           <div className="w-full md:w-3/6">
             <div className="md:pl-44 pr-38 py-24">

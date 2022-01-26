@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
           <Image src={Logo} alt="Navbar Logo" width="200" height="35" />
         </div>
         <div className="block lg:hidden">
-          <button className="flex items-center px-3 py-2 border rounded text-black border-teal-400 hover:text-white hover:border-white">
+          <button className="flex items-center px-3 py-2 border rounded text-black border-tsoft-red hover:text-white hover:border-white">
             <svg
               className="fill-current h-3 w-3"
               viewBox="0 0 20 20"
@@ -29,25 +29,25 @@ const Navbar: React.FC = () => {
           <div>
             <a
               href="#responsive-header"
-              className="block px-4 mt-4 lg:inline-block lg:mt-0 text-black mr-4 text-lg hover:text-red-400"
+              className="block px-4 mt-4 lg:inline-block lg:mt-0 text-black mr-4 text-lg hover:text-soft-red"
             >
               FEATURES
             </a>
             <a
               href="#responsive-header"
-              className="block px-4 mt-4 lg:inline-block lg:mt-0 text-black mr-4 text-lg hover:text-red-400"
+              className="block px-4 mt-4 lg:inline-block lg:mt-0 text-black mr-4 text-lg hover:text-soft-red"
             >
               PRICING
             </a>
             <a
               href="#responsive-header"
-              className="block px-4 mt-4 lg:inline-block lg:mt-0 text-black text-lg hover:text-red-400"
+              className="block px-4 mt-4 lg:inline-block lg:mt-0 text-black text-lg hover:text-soft-red"
             >
               CONTACT
             </a>
             <a
               href="#"
-              className="inline-block mx-6 px-10 py-4 leading-none border rounded-lg text-white bg-red-400 border-transparent text-lg hover:border-red-400 hover:text-red-400 hover:bg-white mt-4 lg:mt-0 duration-300 font-semibold"
+              className="inline-block mx-6 px-10 py-4 leading-none border rounded-lg text-white bg-soft-red border-transparent text-lg hover:border-soft-red hover:text-soft-red hover:bg-white mt-4 lg:mt-0 duration-300 font-semibold"
             >
               LOGIN
             </a>
