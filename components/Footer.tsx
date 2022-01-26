@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
                 <a
                   href="#"
                   rel="noopener noreferrer"
-                  className=" text-2xl text-white ml-1 fill-white"
+                  className="text-2xl text-white ml-1 fill-white"
                   target="_blank"
                 >
                   <Image
@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
                     height="35"
                   />
                 </a>
-                <div className="flex flex-col md:flex-row p-4 text-2xl items-center justify-center">
+                <div className="flex flex-col md:flex-row p-6 text-2xl items-center justify-center">
                   <a className="pt-8 md:py-auto px-6 cursor-pointer hover:text-soft-red duration-300">
                     FEATURES
                   </a>
