@@ -14,11 +14,25 @@ const Faq: React.FC<indexProps> = ({}) => {
           </h6>
         </div>
         <div className="flex flex-col justify-center items-center max-w-2xl">
-          <div className="border-t border-black py-4 pb-6">
-            <div>
+          <div className="border-t border-gray-300 py-4 pb-6">
+            <div className="flex flex-row justify-between">
               <h2 className="text-xl">What is Bookmark?</h2>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-8 w-8 font-bold text-soft-red"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M5 15l7-7 7 7"
+                />
+              </svg>
             </div>
-            <h5 className="mt-10 text-lg">
+            <h5 className="mt-10 text-xl text-gray-400">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
               tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum
               quis quam ornare mattis.
