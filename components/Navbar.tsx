@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
             </svg>
           </button>
         </div>
-        <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+        <div className="w-full hidden flex-grow lg:flex lg:items-center lg:w-auto">
           <div className="text-sm lg:flex-grow"></div>
           <div>
             <a

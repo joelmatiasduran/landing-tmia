@@ -6,7 +6,7 @@ const Faq: React.FC<indexProps> = ({}) => {
   const [isOpen, setIsOpen] = useState<number>(0);
   return (
     <>
-      <div className="flex flex-col items-center justify-center bg-white">
+      <div className="flex flex-col items-center justify-center bg-white mx-8 md:mx-auto">
         <div className="flex flex-col items-center justify-center text center">
           <h2 className="text-4xl font-bold text-center">
             Frequently Asked Questions

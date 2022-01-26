@@ -9,12 +9,12 @@ interface indexProps {}
 const Grid: React.FC<indexProps> = ({}) => {
   return (
     <>
-      <div className="mt-48 flex flex-col justify-center items-center">
+      <div className="mt-48 flex flex-col justify-center items-center mx-8 md:mx-auto">
         <div className="">
           <h2 className="text-3xl font-bold text-center">
             Download the extension
           </h2>
-          <h4 className="mt-4 text-2xl text-gray-500 text-center max-w-2xl">
+          <h4 className="mt-4 text-lg md:text-2xl text-gray-500 text-center max-w-2xl">
             We have got more browser in the pipeline. Please do let us know if
             you have got a favourite you would like us to prioritize.{" "}
           </h4>
