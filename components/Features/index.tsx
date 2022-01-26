@@ -21,16 +21,38 @@ const Features: React.FC<indexProps> = ({}) => {
             can access them on the go
           </h4>
         </div>
-        <div className="mt-16 flex flex-row text-lg md:text-2xl justify-between border-b-2 border-b-black py-5 max-w-sm  md:max-w-full">
-          <h4 className="px-6" onClick={() => setIsTab("first")}>
-            Simple Bookmarking
-          </h4>
-          <h4 className="px-6" onClick={() => setIsTab("second")}>
-            Speedy Searching
-          </h4>
-          <h4 className="px-6" onClick={() => setIsTab("third")}>
-            Easy Sharing
-          </h4>
+        <div className="mt-16 flex flex-col text-lg md:text-2xl justify-between border-b-2 border-b-gray-300 pt-5 max-w-sm  md:max-w-full">
+          <div className="flex flex-row w-full min-w-full">
+            <h4
+              className="px-6 cursor-pointer"
+              onClick={() => setIsTab("first")}
+            >
+              Simple Bookmarking
+            </h4>
+            <h4
+              className="px-6 cursor-pointer"
+              onClick={() => setIsTab("second")}
+            >
+              Speedy Searching
+            </h4>
+            <h4
+              className="px-6 cursor-pointer"
+              onClick={() => setIsTab("third")}
+            >
+              Easy Sharing
+            </h4>
+          </div>
+          <div
+            className={`transform duration-300 border-b-8 border-b-soft-red w-64 translate ${
+              isTab === "first"
+                ? "translate-x-0"
+                : isTab === "second"
+                ? "translate-x-64"
+                : isTab === "third"
+                ? "translate-x-{100} will-change-scroll"
+                : ""
+            }`}
+          ></div>
         </div>
         {/* The content of the features */}
         <div className="mt-12 w-full flex flex-col justify-center items-center">
