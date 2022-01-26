@@ -27,14 +27,14 @@ const Footer: React.FC = () => {
                     height="35"
                   />
                 </a>
-                <div className="flex flex-col md:flex-row p-4 text-xl items-center justify-center">
-                  <a className="py-6 md:py-auto px-6 cursor-pointer hover:text-soft-red duration-300">
+                <div className="flex flex-col md:flex-row p-4 text-2xl items-center justify-center">
+                  <a className="pt-8 md:py-auto px-6 cursor-pointer hover:text-soft-red duration-300">
                     FEATURES
                   </a>
-                  <a className="py-6 md:py-auto px-6 cursor-pointer hover:text-soft-red duration-300">
+                  <a className="pt-8 md:py-auto px-6 cursor-pointer hover:text-soft-red duration-300">
                     PRICING
                   </a>
-                  <a className="py-6 md:py-auto px-6 cursor-pointer hover:text-soft-red duration-300">
+                  <a className="pt-8 md:py-auto px-6 cursor-pointer hover:text-soft-red duration-300">
                     CONTACT
                   </a>
                 </div>
