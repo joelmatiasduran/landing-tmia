@@ -1,17 +1,18 @@
 import { useState } from "react";
 import Image from "next/image";
 import FirstImg from "../../public/images/illustration-features-tab-1.svg";
-import SecongImg from "../../public/images/illustration-features-tab-2.svg";
+import SecondImg from "../../public/images/illustration-features-tab-2.svg";
 import ThirdImg from "../../public/images/illustration-features-tab-3.svg";
+import FeatureInfo from "./FeatureInfo";
 
 interface indexProps {}
 
 const Features: React.FC<indexProps> = ({}) => {
-  const [isSelected, setIsSelected] = useState<string>("");
+  const [isTab, setIsTab] = useState<string>("first");
 
   return (
     <>
-      <div className="flex flex-col justify-center items-center mt-8 w-full">
+      <div className="flex flex-col justify-center items-center mt-8 w-full min-w-full">
         <div>
           <h2 className="text-4xl font-bold text-center">Features</h2>
           <h4 className="pt-8 text-2xl text-gray-500 max-w-2xl text-center">
@@ -20,13 +21,66 @@ const Features: React.FC<indexProps> = ({}) => {
             can access them on the go
           </h4>
         </div>
-        <div className="mt-16 flex flex-row text-2xl justify-between border-2 border-b-black py-5">
-          <h4 className="px-6">Simple Bookmarking</h4>
-          <h4 className="px-6">Speedy Searching</h4>
-          <h4 className="px-6">Easy Sharing</h4>
+        <div className="mt-16 flex flex-row text-lg md:text-2xl justify-between border-2 border-b-black py-5 max-w-sm  md:max-w-full">
+          <h4 className="px-6" onClick={() => setIsTab("first")}>
+            Simple Bookmarking
+          </h4>
+          <h4 className="px-6" onClick={() => setIsTab("second")}>
+            Speedy Searching
+          </h4>
+          <h4 className="px-6" onClick={() => setIsTab("third")}>
+            Easy Sharing
+          </h4>
         </div>
-        <div>
-          <Image src={FirstImg} alt={""} />
+        {/* The content of the features */}
+        <div className="mt-12 w-full flex flex-col justify-center items-center">
+          <div className="w-full flex flex-col  md:flex-row justify-center items-center">
+            <div className="w-full md:w-1/2 ">
+              <Image
+                src={
+                  isTab === "first"
+                    ? FirstImg
+                    : isTab === "second"
+                    ? SecondImg
+                    : isTab === "third"
+                    ? ThirdImg
+                    : FirstImg
+                }
+                alt={""}
+              />
+            </div>
+            <div className="w-full md:w-1/2  max-w-xl">
+              {isTab === "first" ? (
+                <FeatureInfo
+                  FeatureTitle="Bookmark in one click"
+                  FeatureContent="Organize your bookmarks however you like. Our simple
+                    drag-and-drop interface gives you complete control over how
+                    you manage your favourite sites."
+                />
+              ) : isTab === "second" ? (
+                <FeatureInfo
+                  FeatureTitle="Intelligent search"
+                  FeatureContent="Organize your bookmarks however you like. Our simple
+                    drag-and-drop interface gives you complete control over how
+                    you manage your favourite sites."
+                />
+              ) : isTab === "third" ? (
+                <FeatureInfo
+                  FeatureTitle="Share your bookmarks"
+                  FeatureContent="Organize your bookmarks however you like. Our simple
+                    drag-and-drop interface gives you complete control over how
+                    you manage your favourite sites."
+                />
+              ) : (
+                <FeatureInfo
+                  FeatureTitle="Bookmark in one Click"
+                  FeatureContent="Organize your bookmarks however you like. Our simple
+                    drag-and-drop interface gives you complete control over how
+                    you manage your favourite sites."
+                />
+              )}
+            </div>
+          </div>
         </div>
       </div>
     </>
