@@ -39,7 +39,7 @@ const Hero: React.FC = ({}) => {
                 />
               </div>
               <div className="ml-44">
-                <div className="bg-soft-blue h-60 flex-grow rounded-l-b-full rounded-l-full"></div>
+                <div className="bg-soft-blue h-96 flex-grow rounded-l-b-full rounded-l-full"></div>
               </div>
             </div>
           </div>
