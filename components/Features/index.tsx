@@ -72,7 +72,7 @@ const Features: React.FC<indexProps> = ({}) => {
                   alt={""}
                 />
               </div>
-              <div className="bg-soft-blue rounded-r-full h-96 w-96 mt-24"></div>
+              <div className="bg-soft-blue rounded-r-full h-72 md:h-96 w-96 mt-24"></div>
             </div>
             <div className="w-full md:w-1/2  max-w-xl">
               {isTab === "first" ? (
