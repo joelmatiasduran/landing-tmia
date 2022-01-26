@@ -30,7 +30,7 @@ const Hero: React.FC = ({}) => {
           </div>
           <div className="w-full md:w-3/6">
             <div className="w-full relative flex flex-col-reverse mt-64">
-              <div className="absolute">
+              <div className="absolute left-8">
                 <Image
                   src={HeroImage}
                   alt="Bookmark Image"
@@ -38,7 +38,7 @@ const Hero: React.FC = ({}) => {
                   height="500"
                 />
               </div>
-              <div className="ml-12">
+              <div className="ml-44">
                 <div className="bg-soft-blue h-60 flex-grow rounded-l-b-full rounded-l-full"></div>
               </div>
             </div>
