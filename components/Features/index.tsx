@@ -22,34 +22,34 @@ const Features: React.FC<indexProps> = ({}) => {
           </h4>
         </div>
         <div className="mt-16 flex flex-col text-lg md:text-2xl justify-between border-b-2 border-b-gray-300 pt-5 max-w-sm  md:max-w-full">
-          <div className="flex flex-row w-full min-w-full">
+          <div className="flex flex-col md:flex-row w-full min-w-full">
             <h4
-              className="px-8 cursor-pointer text-center"
+              className="py-6 md:py-auto px-8 cursor-pointer text-center"
               onClick={() => setIsTab("first")}
             >
               Simple Bookmarking
             </h4>
             <h4
-              className="px-8 cursor-pointer text-center"
+              className="py-6 md:py-auto px-8 cursor-pointer text-center"
               onClick={() => setIsTab("second")}
             >
               Speedy Searching
             </h4>
             <h4
-              className="px-8 cursor-pointer text-center"
+              className="py-6 md:py-auto px-8 cursor-pointer text-center"
               onClick={() => setIsTab("third")}
             >
               Easy Sharing
             </h4>
           </div>
           <div
-            className={`mt-8 transform ease-in-out duration-300 border-b-8 border-b-soft-red w-24 md:w-72 translate ${
+            className={`mt-8 transform ease-in-out duration-300 md:border-b-8 border-b-soft-red w-24 md:w-72 translate ${
               isTab === "first"
-                ? "translate-x-8 md:translate-x-0"
+                ? "md:translate-x-0"
                 : isTab === "second"
-                ? "translate-x-52 md:translate-x-64 md:ml-4"
+                ? "md:translate-x-64 md:ml-4"
                 : isTab === "third"
-                ? "translate-x-80 md:translate-x-96 md:ml-32 will-change-scroll"
+                ? "md:translate-x-96 md:ml-32 will-change-scroll"
                 : ""
             }`}
           ></div>
