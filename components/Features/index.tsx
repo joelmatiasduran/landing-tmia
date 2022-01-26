@@ -49,7 +49,7 @@ const Features: React.FC<indexProps> = ({}) => {
                 : isTab === "second"
                 ? "translate-x-52 md:translate-x-64 md:ml-4"
                 : isTab === "third"
-                ? "translate-x-80 md:ml-32 will-change-scroll"
+                ? "translate-x-80 md:translate-x-96 md:ml-32 will-change-scroll"
                 : ""
             }`}
           ></div>
@@ -57,19 +57,22 @@ const Features: React.FC<indexProps> = ({}) => {
         {/* The content of the features */}
         <div className="mt-12 w-full flex flex-col justify-center items-center">
           <div className="w-full flex flex-col  md:flex-row justify-center items-center">
-            <div className="w-full md:w-1/2 ">
-              <Image
-                src={
-                  isTab === "first"
-                    ? FirstImg
-                    : isTab === "second"
-                    ? SecondImg
-                    : isTab === "third"
-                    ? ThirdImg
-                    : FirstImg
-                }
-                alt={""}
-              />
+            <div className="w-full md:w-1/2 relative">
+              <div className="absolute left-24">
+                <Image
+                  src={
+                    isTab === "first"
+                      ? FirstImg
+                      : isTab === "second"
+                      ? SecondImg
+                      : isTab === "third"
+                      ? ThirdImg
+                      : FirstImg
+                  }
+                  alt={""}
+                />
+              </div>
+              <div className="bg-soft-blue rounded-r-full h-96 w-96 mt-24"></div>
             </div>
             <div className="w-full md:w-1/2  max-w-xl">
               {isTab === "first" ? (
