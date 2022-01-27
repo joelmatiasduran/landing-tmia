@@ -28,19 +28,28 @@ const Features: React.FC<indexProps> = ({}) => {
         <div className="mt-16 flex flex-col text-lg md:text-2xl justify-between border-b-2 border-b-gray-300 pt-5 max-w-sm  md:max-w-full">
           <div className="flex flex-col md:flex-row w-full min-w-full">
             <h4
-              className="py-6 md:py-auto px-8 cursor-pointer text-center"
+              className={`py-6 md:py-auto px-8 cursor-pointer text-center ${
+                currentTab === "first" &&
+                "border-b-4 border-soft-red scale-100 transition transform duration-300 md:border-transparent"
+              }`}
               onClick={() => setCurrentTab("first")}
             >
               Simple Bookmarking
             </h4>
             <h4
-              className="py-6 md:py-auto px-8 cursor-pointer text-center"
+              className={`py-6 md:py-auto px-8 cursor-pointer text-center  ${
+                currentTab === "second" &&
+                "border-b-4 border-soft-red scale-100 transition transform duration-300 md:border-transparent"
+              }`}
               onClick={() => setCurrentTab("second")}
             >
               Speedy Searching
             </h4>
             <h4
-              className="py-6 md:py-auto px-8 cursor-pointer text-center"
+              className={`py-6 md:py-auto px-8 cursor-pointer text-center  ${
+                currentTab === "third" &&
+                "border-b-4 border-soft-red scale-100 transition transform duration-300 md:border-transparent"
+              }`}
               onClick={() => setCurrentTab("third")}
             >
               Easy Sharing
