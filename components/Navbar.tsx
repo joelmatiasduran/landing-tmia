@@ -2,6 +2,8 @@ import { useState } from "react";
 import Image from "next/image";
 import Logo from "../public/images/logo-bookmark.svg";
 import LogoMobile from "../public/images/logo-bookmarktwo.svg";
+import { AiFillFacebook } from "react-icons/ai";
+import { FaTwitter } from "react-icons/fa";
 
 // interface NavbarProps {
 
@@ -108,28 +110,36 @@ const Navbar: React.FC = () => {
           </div>
           {/* Mobile Navbar */}
         </div>
-        {isOpen && (
-          <div className="transition transform ease-in-out duration-300 z-10 pt-16 fixed flex flex-col items-center justify-center min-w-full h-full w-full bg-very-dark-blue opacity-90 md:hidden">
-            <div className="w-5/6 text-center">
-              <h2 className="py-6 cursor-pointer text-2xl tracking-widest  border-t border-white text-white">
-                FEATURES
-              </h2>
-              <h2 className="py-6 cursor-pointer text-2xl tracking-widest  border-t border-white text-white">
-                PRICING
-              </h2>
-              <h2 className="py-6 cursor-pointer text-2xl tracking-widest  border-y border-white text-white">
-                CONTACT
-              </h2>
-              <h2 className="mt-12 py-4 cursor-pointer text-2xl tracking-widest  border-2 border-white text-white rounded-lg">
-                LOGIN
-              </h2>
-              <div className="mt-24 flex flex-row justify-center text-white">
-                <p className="px-8">Icon1</p>
-                <p className="px-8">Icon2</p>
-              </div>
+        {/* {isOpen && ( */}
+        <div
+          className={`transition transform ease-in-out duration-300 z-10 pt-16 fixed flex flex-col items-center justify-center min-w-full h-full w-full bg-very-dark-blue opacity-90 ${
+            !isOpen && "scale-0"
+          }`}
+        >
+          <div className="w-5/6 text-center">
+            <h2 className="py-6 cursor-pointer text-2xl tracking-widest  border-t border-white text-white">
+              FEATURES
+            </h2>
+            <h2 className="py-6 cursor-pointer text-2xl tracking-widest  border-t border-white text-white">
+              PRICING
+            </h2>
+            <h2 className="py-6 cursor-pointer text-2xl tracking-widest  border-y border-white text-white">
+              CONTACT
+            </h2>
+            <h2 className="mt-12 py-4 cursor-pointer text-2xl tracking-widest  border-2 border-white text-white rounded-lg">
+              LOGIN
+            </h2>
+            <div className="mt-24 flex flex-row justify-center text-4-xl text-white">
+              <a className="px-8 text-4xl cursor-pointer">
+                <AiFillFacebook />
+              </a>
+              <a className="px-8 text-4xl  cursor-pointer">
+                <FaTwitter />
+              </a>
             </div>
           </div>
-        )}
+        </div>
+        {/* )} */}
       </nav>
     </>
   );
