@@ -37,7 +37,8 @@ const Accordion: React.FC<AccordionProps> = ({ children, title }) => {
 
         <h5
           className={`transform duration-200 ease-in-out ${
-            question && "delay-100 scale-100 mt-10 text-xl text-gray-400"
+            question &&
+            "transition delay-200 scale-100 mt-10 text-xl text-gray-400"
           } ${!question && "opacity-0 scale-0 h-0"}`}
         >
           {children}

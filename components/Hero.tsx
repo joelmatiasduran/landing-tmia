@@ -19,10 +19,10 @@ const Hero: React.FC = ({}) => {
                 instantly.Try it for free.
               </p>
               <div className="mt-12 ml-2 flex items-center justify-center md:justify-start">
-                <button className="mr-4 border-4 text-white bg-blue-500 px-8 py-4 rounded-lg">
+                <button className="mr-4 border-4 hover:border-soft-blue hover:bg-transparent text-white hover:text-soft-blue bg-soft-blue px-8 py-4 rounded-lg duration-300">
                   Get it on Chrome
                 </button>
-                <button className="border-4 border-very-dark-blue px-8 py-4 rounded-lg">
+                <button className="border-4 text-very-dark-blue border-very-dark-blue hover:text-white hover:bg-very-dark-blue px-8 py-4 rounded-lg duration-300">
                   Get it on Firefox
                 </button>
               </div>
