@@ -61,13 +61,19 @@ const Features: React.FC<indexProps> = ({}) => {
           <div className="w-full flex flex-col  md:flex-row justify-center items-center">
             <div className="w-full md:w-1/2 relative">
               <div className="absolute left-24">
-                {currentTab === "first" && <Image src={FirstImg} alt={""} />}
-                {currentTab === "second" && <Image src={SecondImg} alt={""} />}
-                {currentTab === "third" && <Image src={ThirdImg} alt={""} />}
+                {currentTab === "first" && (
+                  <Image src={FirstImg} alt={"Feature Image"} />
+                )}
+                {currentTab === "second" && (
+                  <Image src={SecondImg} alt={"Feature Image"} />
+                )}
+                {currentTab === "third" && (
+                  <Image src={ThirdImg} alt={"Feature Image"} />
+                )}
               </div>
               <div className="bg-soft-blue rounded-r-full h-56 md:h-96 w-96 mt-24"></div>
             </div>
-            <div className="mt-12 md:mt-auto w-full md:w-1/2  max-w-xl">
+            <div className="mt-12 md:mt-auto w-full md:w-1/2 max-w-xl">
               {currentTab === "first" && (
                 <FeatureInfo
                   FeatureTitle="Bookmark in one click"
