@@ -24,7 +24,9 @@ const Navbar: React.FC = () => {
         </div>
         <div className="block lg:hidden">
           <button
-            className="flex items-center px-3 py-2 text-very-dark-blue border-tsoft-red hover:text-soft-red hover:border-white duration-300"
+            className={`flex items-center px-3 py-2 ${isOpen && "text-white"} ${
+              !isOpen && "text-very-dark-blue"
+            } border-tsoft-red hover:text-soft-red hover:border-white duration-300`}
             onClick={() => setIsOpen(!isOpen)}
           >
             <svg
@@ -79,16 +81,16 @@ const Navbar: React.FC = () => {
       {isOpen && (
         <div className="transition transform ease-in-out duration-300 z-10 pt-16 fixed flex flex-col items-center justify-center min-w-full h-full w-full bg-very-dark-blue opacity-90 md:hidden">
           <div className="w-5/6 text-center">
-            <h2 className="py-6 cursor-pointer text-2xl tracking-widest border-t border-white text-white">
+            <h2 className="py-6 cursor-pointer text-2xl tracking-widest  border-t border-white text-white">
               FEATURES
             </h2>
-            <h2 className="py-6 cursor-pointer text-2xl tracking-widest border-t border-white text-white">
+            <h2 className="py-6 cursor-pointer text-2xl tracking-widest  border-t border-white text-white">
               PRICING
             </h2>
-            <h2 className="py-6 cursor-pointer text-2xl tracking-widest border-y border-white text-white">
+            <h2 className="py-6 cursor-pointer text-2xl tracking-widest  border-y border-white text-white">
               CONTACT
             </h2>
-            <h2 className="mt-12 py-4 cursor-pointer text-2xl tracking-widest border-2 border-white text-white rounded-lg">
+            <h2 className="mt-12 py-4 cursor-pointer text-2xl tracking-widest  border-2 border-white text-white rounded-lg">
               LOGIN
             </h2>
             <div className="mt-24 flex flex-row justify-center text-white">
