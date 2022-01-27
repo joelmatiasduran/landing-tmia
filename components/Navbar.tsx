@@ -1,14 +1,18 @@
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../public/images/logo-bookmark.svg";
+
 // interface NavbarProps {
 
 // }
 
 const Navbar: React.FC = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
   return (
     <>
-      <nav className="flex md:items-center justify-between flex-row md:flex-wrap p-8 md:px-40 fixed w-full md:bg-white  z-10">
+      <nav className="flex md:items-center justify-between flex-row md:flex-wrap p-8 md:px-40 fixed w-full md:bg-white z-10">
         <div className="flex items-center flex-shrink-0 text-black mr-6 cursor-pointer">
           <Image src={Logo} alt="Navbar Logo" width="200" height="35" />
         </div>
@@ -30,6 +34,8 @@ const Navbar: React.FC = () => {
             </svg>
           </button>
         </div>
+
+        {/* Desktop Navbar */}
         <div className="w-full hidden flex-grow lg:flex lg:items-center lg:w-auto">
           <div className="text-sm lg:flex-grow"></div>
           <div>
@@ -59,7 +65,28 @@ const Navbar: React.FC = () => {
             </a>
           </div>
         </div>
+        {/* Mobile Navbar */}
       </nav>
+      <div className="z-10 pt-32 fixed flex flex-col items-center justify-center min-w-full h-full w-full bg-very-dark-blue opacity-90 md:hidden">
+        <div className="w-full text-center">
+          <h2 className="py-6 cursor-pointer text-2xl tracking-widest border-t-2 border-white text-white">
+            FEATURES
+          </h2>
+          <h2 className="py-6 cursor-pointer text-2xl tracking-widest border-t-2 border-white text-white">
+            PRICING
+          </h2>
+          <h2 className="py-6 cursor-pointer text-2xl tracking-widest border-t-2 border-white text-white">
+            CONTACT
+          </h2>
+          <h2 className="py-6 cursor-pointer text-2xl tracking-widest border-2 border-white text-white">
+            LOGIN
+          </h2>
+          <div className="mt-12 flex flex-row justify-center text-white">
+            <p>Icon1</p>
+            <p>Icon2</p>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

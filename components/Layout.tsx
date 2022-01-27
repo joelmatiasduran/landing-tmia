@@ -10,7 +10,7 @@ type Props = {
 };
 
 const Layout = ({ children, title = "Terapia Mia" }: Props) => (
-  <div className="h-full ">
+  <div className="h-full">
     <Head>
       <title>{title}</title>
       <meta charSet="utf-8" />
