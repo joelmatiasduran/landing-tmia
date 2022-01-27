@@ -62,7 +62,11 @@ const Features: React.FC<indexProps> = ({}) => {
             <div className="w-full md:w-1/2 relative">
               <div className="absolute left-24">
                 {currentTab === "first" && (
-                  <Image src={FirstImg} alt={"Feature Image"} />
+                  <Image
+                    src={FirstImg}
+                    alt={"Feature Image"}
+                    layout="intrinsic"
+                  />
                 )}
                 {currentTab === "second" && (
                   <Image src={SecondImg} alt={"Feature Image"} />
