@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Link from "next/link";
 import Image from "next/image";
 import Logo from "../public/images/logo-bookmark.svg";
 import LogoMobile from "../public/images/logo-bookmarktwo.svg";
@@ -41,20 +40,38 @@ const Navbar: React.FC = () => {
               } border-tsoft-red hover:text-soft-red hover:border-white duration-300`}
               onClick={() => setIsOpen(!isOpen)}
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
+              {!isOpen && (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              )}
+              {isOpen && (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              )}
             </button>
           </div>
 
@@ -63,19 +80,20 @@ const Navbar: React.FC = () => {
             <div className="text-sm lg:flex-grow"></div>
             <div>
               <a
-                href="#responsive-header"
+                href="#"
+                rel="noopener noreferrer"
                 className="block px-4 mt-4 lg:inline-block lg:mt-0 text-black mr-4 text-lg hover:text-soft-red"
               >
                 FEATURES
               </a>
               <a
-                href="#responsive-header"
+                href="#"
                 className="block px-4 mt-4 lg:inline-block lg:mt-0 text-black mr-4 text-lg hover:text-soft-red"
               >
                 PRICING
               </a>
               <a
-                href="#responsive-header"
+                href="#"
                 className="block px-4 mt-4 lg:inline-block lg:mt-0 text-black text-lg hover:text-soft-red"
               >
                 CONTACT
