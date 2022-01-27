@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
           <a
             href="#"
             rel="noopener noreferrer"
-            className="text-2xl text-white ml-1 fill-white"
+            className="text-2xl text-white ml-1 fill-white items-center"
           >
             <Image
               src={Logo}
@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
               height="33"
             />
           </a>
-          <div className="flex flex-col items-center justify-center md:block text-2xl">
+          <div className="flex flex-col items-center justify-center md:block text-2xl md:ml-16">
             <a
               href="#"
               className="pt-8 md:py-auto px-6 cursor-pointer hover:text-soft-red duration-300"
