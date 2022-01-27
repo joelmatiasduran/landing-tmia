@@ -2,6 +2,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../public/images/logo-bookmark.svg";
+import LogoMobile from "../public/images/logo-bookmarktwo.svg";
 
 // interface NavbarProps {
 
@@ -12,12 +13,20 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <nav className="flex md:items-center justify-between flex-row md:flex-wrap p-8 md:px-40 fixed w-full md:bg-white z-10">
+      <nav className="flex md:items-center justify-between flex-row md:flex-wrap p-8 md:px-40 fixed w-full md:bg-white z-20">
         <div className="flex items-center flex-shrink-0 text-black mr-6 cursor-pointer">
-          <Image src={Logo} alt="Navbar Logo" width="200" height="35" />
+          {!isOpen && (
+            <Image src={Logo} alt="Navbar Logo" width="200" height="35" />
+          )}
+          {isOpen && (
+            <Image src={LogoMobile} alt="Navbar Logo" width="200" height="35" />
+          )}
         </div>
         <div className="block lg:hidden">
-          <button className="flex items-center px-3 py-2 text-very-dark-blue border-tsoft-red hover:text-soft-red hover:border-white duration-300">
+          <button
+            className="flex items-center px-3 py-2 text-very-dark-blue border-tsoft-red hover:text-soft-red hover:border-white duration-300"
+            onClick={() => setIsOpen(!isOpen)}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
@@ -67,26 +76,28 @@ const Navbar: React.FC = () => {
         </div>
         {/* Mobile Navbar */}
       </nav>
-      <div className="z-10 pt-32 fixed flex flex-col items-center justify-center min-w-full h-full w-full bg-very-dark-blue opacity-90 md:hidden">
-        <div className="w-full text-center">
-          <h2 className="py-6 cursor-pointer text-2xl tracking-widest border-t-2 border-white text-white">
-            FEATURES
-          </h2>
-          <h2 className="py-6 cursor-pointer text-2xl tracking-widest border-t-2 border-white text-white">
-            PRICING
-          </h2>
-          <h2 className="py-6 cursor-pointer text-2xl tracking-widest border-t-2 border-white text-white">
-            CONTACT
-          </h2>
-          <h2 className="py-6 cursor-pointer text-2xl tracking-widest border-2 border-white text-white">
-            LOGIN
-          </h2>
-          <div className="mt-12 flex flex-row justify-center text-white">
-            <p>Icon1</p>
-            <p>Icon2</p>
+      {isOpen && (
+        <div className="transition transform ease-in-out duration-300 z-10 pt-16 fixed flex flex-col items-center justify-center min-w-full h-full w-full bg-very-dark-blue opacity-90 md:hidden">
+          <div className="w-5/6 text-center">
+            <h2 className="py-6 cursor-pointer text-2xl tracking-widest border-t border-white text-white">
+              FEATURES
+            </h2>
+            <h2 className="py-6 cursor-pointer text-2xl tracking-widest border-t border-white text-white">
+              PRICING
+            </h2>
+            <h2 className="py-6 cursor-pointer text-2xl tracking-widest border-y border-white text-white">
+              CONTACT
+            </h2>
+            <h2 className="mt-12 py-4 cursor-pointer text-2xl tracking-widest border-2 border-white text-white rounded-lg">
+              LOGIN
+            </h2>
+            <div className="mt-24 flex flex-row justify-center text-white">
+              <p className="px-8">Icon1</p>
+              <p className="px-8">Icon2</p>
+            </div>
           </div>
         </div>
-      </div>
+      )}
     </>
   );
 };
