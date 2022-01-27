@@ -1,29 +1,26 @@
 # Technologies Used
 
--TypeScript
--Next Js (React Framework)
--Lottie
--Tailwind Css
+-[TypeScript](https://www.typescriptlang.org/)
+
+-[Next Js](https://nextjs.org/)
+
+-[Tailwind CSS](https://tailwindcss.com/)
+
+-[React Icons](https://react-icons.github.io/react-icons/)
 
 ## Preview
 
--SVG Animation
-
-## Deploy your own
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-typescript&project-name=with-typescript&repository-name=with-typescript)
+[LIVE DEMO](https://landing-tmia.vercel.app/)
 
 ## How to use it?
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+Execute
 
 ```bash
-npx create-next-app --example with-typescript with-typescript-app
+npm run dev
 # or
-yarn create next-app --example with-typescript with-typescript-app
+yarn dev
 ```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
 
 ## Notes
 
