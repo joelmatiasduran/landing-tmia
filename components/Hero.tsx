@@ -13,7 +13,7 @@ const Hero: React.FC = ({}) => {
               <h1 className="text-4xl md:text-6xl text-very-dark-blue font-bold font-Rubik w-full max-w-lg md:max-w-3xl text-center md:text-left">
                 A Simple Bookmark Manager
               </h1>
-              <p className="text-2xl mt-8 px-8 max-w-lg md:max-w-4xl text-gray-400 text-center md:text-left">
+              <p className="text-2xl mt-8 px-8 md:px-0 max-w-lg md:max-w-4xl text-gray-400 text-center md:text-left">
                 A clean and simple interface to organize your favourite
                 websites. Open a new browser tab and see your sites load
                 instantly.Try it for free.

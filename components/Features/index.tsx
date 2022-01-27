@@ -14,7 +14,7 @@ const Features: React.FC<indexProps> = ({}) => {
 
   return (
     <>
-      <div className="flex flex-col justify-center items-center mt-8 w-full min-w-full pr-8 md:px-auto">
+      <div className="flex flex-col justify-center items-center mt-8 w-full min-w-full md:px-auto">
         <div>
           <h2 className="text-4xl font-bold text-center text-very-dark-blue">
             Features
