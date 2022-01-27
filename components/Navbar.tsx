@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
   return (
     <>
       <nav className="flex md:items-center justify-between flex-row md:flex-wrap p-8 md:px-40 fixed w-full md:bg-white  z-10">
-        <div className="flex items-center flex-shrink-0 text-black mr-6">
+        <div className="flex items-center flex-shrink-0 text-black mr-6 cursor-pointer">
           <Image src={Logo} alt="Navbar Logo" width="200" height="35" />
         </div>
         <div className="block lg:hidden">
