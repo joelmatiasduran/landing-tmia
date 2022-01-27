@@ -14,7 +14,7 @@ const Features: React.FC<indexProps> = ({}) => {
 
   return (
     <>
-      <div className="flex flex-col justify-center items-center mt-8 w-full min-w-full px-8 md:px-auto">
+      <div className="flex flex-col justify-center items-center mt-8 w-full min-w-full pr-8 md:px-auto">
         <div>
           <h2 className="text-4xl font-bold text-center text-very-dark-blue">
             Features
@@ -67,9 +67,9 @@ const Features: React.FC<indexProps> = ({}) => {
         </div>
         {/* The content of the features */}
         <div className="mt-12 w-full flex flex-col justify-center items-center">
-          <div className="w-full flex flex-col  md:flex-row justify-center items-center">
+          <div className="w-full flex flex-col md:flex-row ">
             <div className="w-full md:w-1/2 relative">
-              <div className="absolute left-24">
+              <div className="absolute left-24 md:left-36">
                 {currentTab === "first" && (
                   <Image
                     src={FirstImg}
@@ -84,7 +84,7 @@ const Features: React.FC<indexProps> = ({}) => {
                   <Image src={ThirdImg} alt={"Feature Image"} />
                 )}
               </div>
-              <div className="bg-soft-blue rounded-r-full h-56 md:h-96 w-96 mt-24"></div>
+              <div className=" bg-soft-blue rounded-r-full h-56 md:h-96 w-4/6 mt-32"></div>
             </div>
             <div className="mt-12 md:mt-auto w-full md:w-1/2 max-w-xl">
               {currentTab === "first" && (
