@@ -7,7 +7,9 @@ const Newsletter: React.FC<NewsletterProps> = ({}) => {
     <>
       <div className="w-full bg-soft-blue text-white">
         <div className="container px-5 py-14 mx-auto flex md:items-center lg:items-center md:flex-col md:flex-nowrap flex-wrap flex-col">
-          <h3 className="py-6 text-xl text-center">35.000 + ALREADY JOINED</h3>
+          <h3 className="py-6 text-xl text-center tracking-widest">
+            35.000 + ALREADY JOINED
+          </h3>
           <h3 className="text-4xl font-semibold md:max-w-md text-center">
             Stay up-to-date with what we are doing
           </h3>

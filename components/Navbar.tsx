@@ -8,19 +8,25 @@ import Logo from "../public/images/logo-bookmark.svg";
 const Navbar: React.FC = () => {
   return (
     <>
-      <nav className="flex items-center justify-between flex-wrap p-8 px-40 fixed w-full bg-white z-10">
+      <nav className="flex md:items-center justify-between flex-row md:flex-wrap p-8 md:px-40 fixed w-full md:bg-white  z-10">
         <div className="flex items-center flex-shrink-0 text-black mr-6">
           <Image src={Logo} alt="Navbar Logo" width="200" height="35" />
         </div>
         <div className="block lg:hidden">
-          <button className="flex items-center px-3 py-2 border rounded text-black border-tsoft-red hover:text-white hover:border-white">
+          <button className="flex items-center px-3 py-2 text-very-dark-blue border-tsoft-red hover:text-soft-red hover:border-white duration-300">
             <svg
-              className="fill-current h-3 w-3"
-              viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
             >
-              <title>Menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
             </svg>
           </button>
         </div>
