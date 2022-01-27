@@ -8,7 +8,9 @@ import FeatureInfo from "./FeatureInfo";
 interface indexProps {}
 
 const Features: React.FC<indexProps> = ({}) => {
-  const [isTab, setIsTab] = useState<string>("first");
+  const [currentTab, setCurrentTab] = useState<"first" | "second" | "third">(
+    "first"
+  );
 
   return (
     <>
@@ -27,33 +29,31 @@ const Features: React.FC<indexProps> = ({}) => {
           <div className="flex flex-col md:flex-row w-full min-w-full">
             <h4
               className="py-6 md:py-auto px-8 cursor-pointer text-center"
-              onClick={() => setIsTab("first")}
+              onClick={() => setCurrentTab("first")}
             >
               Simple Bookmarking
             </h4>
             <h4
               className="py-6 md:py-auto px-8 cursor-pointer text-center"
-              onClick={() => setIsTab("second")}
+              onClick={() => setCurrentTab("second")}
             >
               Speedy Searching
             </h4>
             <h4
               className="py-6 md:py-auto px-8 cursor-pointer text-center"
-              onClick={() => setIsTab("third")}
+              onClick={() => setCurrentTab("third")}
             >
               Easy Sharing
             </h4>
           </div>
           <div
-            className={`mt-8 transform ease-in-out duration-300 md:border-b-8 border-b-soft-red w-24 md:w-72 translate ${
-              isTab === "first"
-                ? "md:translate-x-0"
-                : isTab === "second"
-                ? "md:translate-x-64 md:ml-4"
-                : isTab === "third"
-                ? "md:translate-x-96 md:ml-32 will-change-scroll"
-                : ""
-            }`}
+            className={`mt-8 transform ease-in-out duration-300 md:border-b-8 border-b-soft-red w-24 md:w-72 translate 
+            ${currentTab === "first" && "md:translate-x-0"}
+            ${currentTab === "second" && "md:translate-x-64 md:ml-4"}
+            ${
+              currentTab === "third" &&
+              "md:translate-x-96 md:ml-32 will-change-scroll"
+            }}`}
           ></div>
         </div>
         {/* The content of the features */}
@@ -61,23 +61,14 @@ const Features: React.FC<indexProps> = ({}) => {
           <div className="w-full flex flex-col  md:flex-row justify-center items-center">
             <div className="w-full md:w-1/2 relative">
               <div className="absolute left-24">
-                <Image
-                  src={
-                    isTab === "first"
-                      ? FirstImg
-                      : isTab === "second"
-                      ? SecondImg
-                      : isTab === "third"
-                      ? ThirdImg
-                      : FirstImg
-                  }
-                  alt={""}
-                />
+                {currentTab === "first" && <Image src={FirstImg} alt={""} />}
+                {currentTab === "second" && <Image src={SecondImg} alt={""} />}
+                {currentTab === "third" && <Image src={ThirdImg} alt={""} />}
               </div>
               <div className="bg-soft-blue rounded-r-full h-56 md:h-96 w-96 mt-24"></div>
             </div>
             <div className="mt-12 md:mt-auto w-full md:w-1/2  max-w-xl">
-              {isTab === "first" && (
+              {currentTab === "first" && (
                 <FeatureInfo
                   FeatureTitle="Bookmark in one click"
                   FeatureContent="Organize your bookmarks however you like. Our simple
@@ -85,7 +76,7 @@ const Features: React.FC<indexProps> = ({}) => {
                     you manage your favourite sites."
                 />
               )}
-              {isTab === "second" && (
+              {currentTab === "second" && (
                 <FeatureInfo
                   FeatureTitle="Intelligent search"
                   FeatureContent="Organize your bookmarks however you like. Our simple
@@ -93,7 +84,7 @@ const Features: React.FC<indexProps> = ({}) => {
                     you manage your favourite sites."
                 />
               )}
-              {isTab === "third" && (
+              {currentTab === "third" && (
                 <FeatureInfo
                   FeatureTitle="Share your bookmarks"
                   FeatureContent="Organize your bookmarks however you like. Our simple
